@@ -42,9 +42,27 @@ const { title } = Astro.props;
     color: #fff;
     display: flex;
     justify-content: center;
+    scroll-behavior: smooth;
   }
   body {
     position: relative;
-    min-height: 100vh;
+    min-height: 200vh;
+  }
+  ::-webkit-scrollbar {
+    width: 8px;
+    border-radius: 8px;
+  }
+
+  ::-webkit-scrollbar-track {
+    background: #13151a;
+  }
+
+  ::-webkit-scrollbar-thumb {
+    background: #4d7bff;
+  }
+  @media (prefers-reduced-motion: reduce) {
+    html {
+      scroll-behavior: auto;
+    }
   }
 </style>

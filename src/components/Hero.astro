@@ -1,12 +1,18 @@
+---
+import Linkedin from "./../icons/Linkedin.astro";
+import Github from "./../icons/Github.astro";
+import Gmail from "./../icons/Gmail.astro";
+---
+
 <div
-  class="flex items-center px-6 lg:w-[90%] xl:w-[1140px] h-[60vh] flex-col md:flex-row gap-10 mt-10 md:mt-6 md:gap-4"
+  class="flex items-center px-6 lg:w-[90%] xl:w-[1140px] h-[70vh] flex-col md:flex-row gap-10 mt-10 md:mt-6 md:gap-4"
 >
   <div class="flex flex-col gap-4 w-full md:w-[90%] xl:w-[50%]">
     <p class="text-xs">Hey There,</p>
     <h1 class="text-3xl sm:text-4xl font-bold">
       I'm <span class="text-denim-400">Mariano</span>
     </h1>
-    <h2 class="text-base sm:text-lg font-semibold">
+    <h2 class="text-base sm:text-lg font-semibold uppercase">
       A Fullstack web developer
     </h2>
     <p class="text-sm">
@@ -14,12 +20,36 @@
       development. I enjoy spending time with my pets, swimming, and exploring
       the outdoors.
     </p>
+    <div class="flex gap-4 items-center mt-4">
+      <a
+        href="https://www.linkedin.com/in/marianojimenezperez-fullstack/"
+        target="_blank"><Linkedin class="size-6" /></a
+      >
+      <a href="https://github.com/MarianoJimenezPerez" target="_blank"
+        ><Github class="size-6" /></a
+      >
+      <a href="mailto:marianojimenezperez1@gmail.com"
+        ><Gmail class="size-6" /></a
+      >
+    </div>
   </div>
-  <div class="md:w-[90%] xl:w-[50%] flex justify-end gradient">
-    <!-- <img
-      src="https://p7.hiclipart.com/preview/1011/874/368/drawing-rendering-figura-humana-thumbnail.jpg"
-      alt="Mariano Jimenez Perez"
-    /> -->
+  <div class="md:w-[90%] xl:w-[50%] relative flex justify-end gradient shadow">
+    <img src="maing.png" alt="Mariano Jimenez Perez" class="" />
+    <div
+      class="absolute top-[12%] left-[10%] md:left-[30%] bg-slate-200 text-denim-400 text-xs p-1 rounded-md font-bold"
+    >
+      Frontend
+    </div>
+    <div
+      class="absolute top-[41%] left-[82%] bg-slate-200 text-denim-400 text-xs p-1 rounded-md font-bold z-0"
+    >
+      Backend
+    </div>
+    <div
+      class="absolute top-[80%] left-[13%] bg-slate-200 text-denim-400 text-xs p-1 rounded-md font-bold z-0 hidden md:block"
+    >
+      DDBB
+    </div>
   </div>
 </div>
 
@@ -31,5 +61,18 @@
       rgba(77, 123, 255, 0.3) 1%,
       rgba(19, 21, 26, 0.01) 64%
     );
+  }
+  img {
+    transform: scale(1.1);
+    z-index: 2;
+  }
+  .shadow::after {
+    position: absolute;
+    content: "";
+    width: 100%;
+    height: 100%;
+    z-index: 2;
+    box-shadow: inset -9px -197px 53px -78px rgba(19, 21, 26, 1);
+    transform: scale(1.2);
   }
 </style>
