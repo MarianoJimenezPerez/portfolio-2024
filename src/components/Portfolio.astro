@@ -1,11 +1,13 @@
-<section
-  id="portfolio"
-  class="lg:w-[90%] xl:w-[1140px] mt-[250px] xs:mt-[50px] md:mt-[200px] mx-auto px-4 flex flex-col"
->
-  <h3 class="uppercase text-3xl text-center font-bold">Portfolio</h3>
-  <p class="text-xs text-center text-denim-200 mt-2">
-    A lot projects are private, but here you have the publics
-  </p>
+---
+import Heading from "./Heading.astro";
+import SectionContainer from "./SectionContainer.astro";
+---
+
+<SectionContainer id="portfolio">
+  <Heading
+    title="Portfolio"
+    subtitle="A lot projects are private, but here you have the publics"
+  />
   <div class="grid grid-cols-3 gap-10 mt-20 mb-10">
     <a
       href="https://realnaut.com/"
@@ -81,4 +83,4 @@
     class="text-denim-400 text-center mx-auto self-center font-bold text-xl"
     >&#8249; View all &#8260; &#8250;
   </a>
-</section>
+</SectionContainer>

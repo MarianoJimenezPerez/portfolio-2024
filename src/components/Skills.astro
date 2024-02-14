@@ -1,0 +1,112 @@
+---
+import Heading from "./Heading.astro";
+import SectionContainer from "./SectionContainer.astro";
+
+//icons
+import Javascript from "./../icons/tech/Javascript.astro";
+import Typescript from "./../icons/tech/Typescript.astro";
+import AstroIcon from "./../icons/tech/AstroIcon.astro";
+import HtmlIcon from "./../icons/tech/HtmlIcon.astro";
+import CssIcon from "./../icons/tech/CssIcon.astro";
+import MuiIcon from "./../icons/tech/MuiIcon.astro";
+import Tailwind from "./../icons/tech/Tailwind.astro";
+import Angular from "./../icons/tech/Angular.astro";
+import Nextjs from "./../icons/tech/Nextjs.astro";
+import Jest from "./../icons/tech/Jest.astro";
+import Vitest from "./../icons/tech/Vitest.astro";
+import ReactQuery from "./../icons/tech/ReactQuery.astro";
+---
+
+<SectionContainer id="skills">
+  <Heading title="Skills" subtitle="knowledge is power" />
+  <div class="grid grid-cols-2 gap-10">
+    <div class="col-span-2 md:col-span-1 border p-2 md:p-8 mt-10 rounded-lg">
+      <div class="flex flex-col gap-10">
+        <h4 class="text-white text-2xl text-center font-semibold">Frontend</h4>
+        <div class="flex px-10 w-[100%]">
+          <div class="w-[50%] flex flex-col gap-8">
+            <div class="flex gap-2 items-start justify-start">
+              <Javascript class="size-3 text-denim-200 mt-1" />
+              <div class="flex flex-col gap-2">
+                <h6 class="text-md">Javascript</h6>
+                <h5 class="text-xs text-sky-100">Experienced</h5>
+              </div>
+            </div>
+            <div class="flex gap-2 items-start justify-start">
+              <AstroIcon class="size-3 text-denim-200 mt-1" />
+              <div class="flex flex-col gap-2">
+                <h6 class="text-md">Astro</h6>
+                <h5 class="text-xs text-sky-100">Experienced</h5>
+              </div>
+            </div>
+            <div class="flex gap-2 items-start justify-start">
+              <CssIcon class="size-3 text-denim-200 mt-1" />
+              <div class="flex flex-col gap-2">
+                <h6 class="text-md">Css</h6>
+                <h5 class="text-xs text-sky-100">Experienced</h5>
+              </div>
+            </div>
+            <div class="flex gap-2 items-start justify-start">
+              <MuiIcon class="size-3 text-denim-200 mt-1" />
+              <div class="flex flex-col gap-2">
+                <h6 class="text-md">Material UI</h6>
+                <h5 class="text-xs text-sky-100">Experienced</h5>
+              </div>
+            </div>
+            <div class="flex gap-2 items-start justify-start">
+              <ReactQuery class="size-3 text-denim-200 mt-1" />
+              <div class="flex flex-col gap-2">
+                <h6 class="text-md">React Query</h6>
+                <h5 class="text-xs text-sky-100">Experienced</h5>
+              </div>
+            </div>
+            <div class="flex gap-2 items-start justify-start">
+              <Vitest class="size-3 text-denim-200 mt-1" />
+              <div class="flex flex-col gap-2">
+                <h6 class="text-md">Vitest</h6>
+                <h5 class="text-xs text-sky-100">Experienced</h5>
+              </div>
+            </div>
+          </div>
+          <div class="w-[50%] flex flex-col gap-8">
+            <div class="flex gap-2 items-start justify-start">
+              <Typescript class="size-3 text-denim-200 mt-1" />
+              <div class="flex flex-col gap-2">
+                <h6 class="text-md">Typescript</h6>
+                <h5 class="text-xs text-sky-100">Experienced</h5>
+              </div>
+            </div>
+            <div class="flex gap-2 items-start justify-start">
+              <Tailwind class="size-3 text-denim-200 mt-1" />
+              <div class="flex flex-col gap-2">
+                <h6 class="text-md">Tailwind</h6>
+                <h5 class="text-xs text-sky-100">Experienced</h5>
+              </div>
+            </div>
+            <div class="flex gap-2 items-start justify-start">
+              <HtmlIcon class="size-3 text-denim-200 mt-1" />
+              <div class="flex flex-col gap-2">
+                <h6 class="text-md">Html</h6>
+                <h5 class="text-xs text-sky-100">Experienced</h5>
+              </div>
+            </div>
+            <div class="flex gap-2 items-start justify-start">
+              <Angular class="size-3 text-denim-200 mt-1" />
+              <div class="flex flex-col gap-2">
+                <h6 class="text-md">Angular</h6>
+                <h5 class="text-xs text-sky-100">Basic</h5>
+              </div>
+            </div>
+            <div class="flex gap-2 items-start justify-start">
+              <Nextjs class="size-3 text-denim-200 mt-1" />
+              <div class="flex flex-col gap-2">
+                <h6 class="text-md">Nestjs</h6>
+                <h5 class="text-xs text-sky-100">Experienced</h5>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</SectionContainer>
