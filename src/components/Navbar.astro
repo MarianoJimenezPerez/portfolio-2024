@@ -1,0 +1,23 @@
+---
+import HomeIcon from "./../icons/HomeIcon.astro";
+import CodeIcon from "./../icons/CodeIcon.astro";
+import BookIcon from "./../icons/BookIcon.astro";
+---
+
+<div
+  class="bottom-10 left-[50%] bg-[#0000004d] backdropf fixed translate-x-[-50%] px-8 py-3 rounded-full"
+>
+  <div class="flex gap-8 items-center justify-start">
+    <div class="rounded-full">
+      <a href="#about" class=""><HomeIcon class="size-6" /></a>
+    </div>
+    <div><a href="#portfolio"><CodeIcon class="size-6" /></a></div>
+    <div><a href="#skills"><BookIcon class="size-6" /></a></div>
+  </div>
+</div>
+
+<style>
+  .backdropf {
+    backdrop-filter: blur(15px);
+  }
+</style>
