@@ -1,22 +1,6 @@
 # Description
 
-## 🚀 Project Structure
-
-Inside of your Astro project, you'll see the following folders and files:
-
-```text
-/
-├── public/
-│   └── favicon.svg
-├── src/
-│   ├── components/
-│   │   └── Card.astro
-│   ├── layouts/
-│   │   └── Layout.astro
-│   └── pages/
-│       └── index.astro
-└── package.json
-```
+Welcome to my personal portfolio! This project serves as a showcase of my skills, projects, and experiences. Feel free to explore and learn more about me.
 
 ## 🧞 Commands
 
