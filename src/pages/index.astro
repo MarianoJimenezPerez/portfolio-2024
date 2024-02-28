@@ -4,13 +4,19 @@ import Hero from "../components/Hero.astro";
 import Portfolio from "../components/Portfolio.astro";
 import Skills from "../components/Skills.astro";
 import AboutMe from "../components/AboutMe.astro";
+import Contact from "../components/Contact.astro";
+import ContactForm from "../components/ContactForm.tsx";
 ---
 
 <Layout title="Mariano Jimenez Perez">
   <main>
     <Hero />
     <Portfolio />
-    <Skills />
     <AboutMe />
+    <Skills />
+    <Contact>
+      <ContactForm client:load />
+    </Contact>
   </main>
 </Layout>
+../components/Contact.tsx ../components/ContactForm.tsx

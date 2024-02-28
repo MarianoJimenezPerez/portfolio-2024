@@ -1,0 +1,50 @@
+---
+import SectionContainer from "./SectionContainer.astro";
+import Heading from "./Heading.astro";
+
+const errors = { email: "", subject: "", message: "" };
+if (Astro.request.method === "POST") {
+  try {
+    const data = await Astro.request.formData();
+    const email = data.get("email");
+    const subject = data.get("subject");
+    const message = data.get("message");
+
+    /* if (typeof email !== "string" || email.length < 1) {
+      errors.email += "Please enter a valid email. ";
+    }
+    if (typeof email !== "string" || !isValidEmail(email)) {
+      errors.email += "Email is not valid. ";
+    } else if (await isRegistered(email)) {
+      errors.email += "Email is already registered. ";
+    }
+    if (typeof password !== "string" || password.length < 6) {
+      errors.password += "Password must be at least 6 characters. ";
+    } */
+    const hasErrors = Object.values(errors).some((msg) => msg);
+    if (!hasErrors) {
+      console.log("000000000000");
+      console.log({ email, subject, message });
+      console.log("000000000000");
+
+      /* await registerUser({ name, email, password });
+      return Astro.redirect("/login"); */
+    }
+  } catch (error) {
+    if (error instanceof Error) {
+      console.error(error.message);
+    }
+  }
+}
+---
+
+<SectionContainer id="contact">
+  <Heading
+    title="Contact me"
+    subtitle=`Do you want to build or revert your website? Take the first step by
+  completing the form.`
+  />
+  <div class="py-8 lg:py-16 px-4 mx-auto max-w-screen-md w-[100%] mb-[130px]">
+    <slot />
+  </div>
+</SectionContainer>
